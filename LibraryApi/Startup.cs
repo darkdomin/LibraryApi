@@ -1,3 +1,4 @@
+using LibraryApi.Entieties;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,11 +28,15 @@ namespace LibraryApi
         {
 
             services.AddControllers();
+            services.AddDbContext<LibraryDbContext>();
+            services.AddScoped<LibrarySeeder>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, LibrarySeeder librarySeeder)
         {
+            librarySeeder.Seed();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
