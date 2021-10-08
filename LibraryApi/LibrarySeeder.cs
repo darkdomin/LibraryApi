@@ -63,6 +63,39 @@ namespace LibraryApi
                             Isbn = " 978-83-283-2518-0"
                         }
                     }
+                },
+                new Library
+                {
+                    Name = "Wojewódzka i Miejska Biblioteka Publiczna im. Josepha Conrada Korzeniowskiego w Gdańsku",
+                    Email = "wbp@wbpg.org.pl",
+                    Phone = "58 301 48 11",
+                    Address = new Address
+                    {
+                        City = "Gdańsk ",
+                        Street = "Targ Rakowy 5/6",
+                        PostalCode = " 80-806"
+                    },
+                    Publications = new List<Publication>()
+                    {
+                        new Publication
+                        {
+                            Title = "Książęce skarby",
+                            ReleaseDate = 2006,
+                            Publisher = "Szkoła Podstawowa Nr 5",
+                            Author = "Nitkowska-Węglarz, Jolanta",
+                            Pages = 258,
+                            Isbn = "83-913-129-6-8"
+                        },
+                        new Publication
+                        {
+                            Title = "Historia i kultura Ziemi Sławieńskiej. T. 14, Darłowo : migawki z historii miasta i okolic",
+                            ReleaseDate = 2016,
+                            Publisher = "Fundacja 'Dziedzictwo'",
+                            Author = "Rączkowski, Włodzimierz",
+                            Pages = 332,
+                            Isbn = "9788395711527"
+                        }
+                    }
                 }
             };
         }
