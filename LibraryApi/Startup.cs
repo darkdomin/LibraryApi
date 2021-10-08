@@ -30,6 +30,7 @@ namespace LibraryApi
             services.AddControllers();
             services.AddDbContext<LibraryDbContext>();
             services.AddScoped<LibrarySeeder>();
+            services.AddAutoMapper(this.GetType().Assembly);
 
         }
 

@@ -1,5 +1,8 @@
-﻿using LibraryApi.Entieties;
+﻿using AutoMapper;
+using LibraryApi.Entieties;
+using LibraryApi.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,32 +14,40 @@ namespace LibraryApi.Controllers
     public class LibraryController : ControllerBase
     {
         private readonly LibraryDbContext _dbContext;
+        private readonly IMapper _mapper;
 
-        public LibraryController(LibraryDbContext dbContext)
+        public LibraryController(LibraryDbContext dbContext, IMapper mapper)
         {
             _dbContext = dbContext;
+            _mapper = mapper;
         }
         
         [HttpGet]
-        public ActionResult<IEnumerable<Library>> Get()
+        public ActionResult<IEnumerable<LibraryDto>> Get()
         {
             var libraries = _dbContext
                             .Libraries
+                            .Include(a=>a.Address)
+                            .Include(p=>p.Publications)
                             .ToList();
-            return Ok(libraries);
+            var librariesDto = _mapper.Map<List<LibraryDto>>(libraries);
+            return Ok(librariesDto);
         }
 
         [HttpGet("{id}")]
-        public ActionResult<IEnumerable<Library>> Get([FromRoute]int id)
+        public ActionResult<IEnumerable<LibraryDto>> Get([FromRoute]int id)
         {
             var library = _dbContext
                             .Libraries
+                            .Include(a => a.Address)
+                            .Include(p => p.Publications)
                             .FirstOrDefault(l=>l.Id == id);
             if(library == null)
             {
                 NotFound();
             }
-            return Ok(library);
+            var libraryDto = _mapper.Map<LibraryDto>(library);
+            return Ok(libraryDto);
         }
     }
 }

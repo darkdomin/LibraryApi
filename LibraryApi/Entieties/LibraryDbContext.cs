@@ -9,6 +9,7 @@ namespace LibraryApi.Entieties
         public DbSet<Library> Libraries { get; set; }
         public DbSet<Address> Addresses { get; set; }
         public DbSet<Publication> Publications { get; set; }
+        public DbSet<Employee> Employees { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
