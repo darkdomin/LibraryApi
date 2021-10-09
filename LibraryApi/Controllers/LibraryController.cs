@@ -49,5 +49,14 @@ namespace LibraryApi.Controllers
             var libraryDto = _mapper.Map<LibraryDto>(library);
             return Ok(libraryDto);
         }
+
+        [HttpPost]
+        public ActionResult Create([FromBody] CreateLibraryDto dto)
+        {
+            var library = _mapper.Map<Library>(dto);
+            _dbContext.Add(library);
+            _dbContext.SaveChanges();
+            return Created($"api/library/{library.Id}", null);
+        }
     }
 }
