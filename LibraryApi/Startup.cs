@@ -1,4 +1,5 @@
 using LibraryApi.Entieties;
+using LibraryApi.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,6 +32,7 @@ namespace LibraryApi
             services.AddDbContext<LibraryDbContext>();
             services.AddScoped<LibrarySeeder>();
             services.AddAutoMapper(this.GetType().Assembly);
+            services.AddScoped<ILibraryService, LibraryService>();
 
         }
 

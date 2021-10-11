@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using LibraryApi.Entieties;
 using LibraryApi.Models;
+using LibraryApi.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -13,50 +14,50 @@ namespace LibraryApi.Controllers
     [Route("api/library")]
     public class LibraryController : ControllerBase
     {
-        private readonly LibraryDbContext _dbContext;
-        private readonly IMapper _mapper;
+        private readonly ILibraryService _libraryService;
 
-        public LibraryController(LibraryDbContext dbContext, IMapper mapper)
+        public LibraryController(ILibraryService libraryService )
         {
-            _dbContext = dbContext;
-            _mapper = mapper;
+            _libraryService = libraryService;
         }
         
         [HttpGet]
         public ActionResult<IEnumerable<LibraryDto>> Get()
         {
-            var libraries = _dbContext
-                            .Libraries
-                            .Include(a=>a.Address)
-                            .Include(p=>p.Publications)
-                            .ToList();
-            var librariesDto = _mapper.Map<List<LibraryDto>>(libraries);
-            return Ok(librariesDto);
+            var libraries = _libraryService.Get();
+            return Ok(libraries);
         }
 
         [HttpGet("{id}")]
-        public ActionResult<IEnumerable<LibraryDto>> Get([FromRoute]int id)
+        public ActionResult<LibraryDto> Get([FromRoute]int id)
         {
-            var library = _dbContext
-                            .Libraries
-                            .Include(a => a.Address)
-                            .Include(p => p.Publications)
-                            .FirstOrDefault(l=>l.Id == id);
-            if(library == null)
+            var library = _libraryService.Get(id);
+            if (library == null)
             {
-                NotFound();
+                return NotFound();
             }
-            var libraryDto = _mapper.Map<LibraryDto>(library);
-            return Ok(libraryDto);
+            return Ok(library);
         }
 
         [HttpPost]
         public ActionResult Create([FromBody] CreateLibraryDto dto)
         {
-            var library = _mapper.Map<Library>(dto);
-            _dbContext.Add(library);
-            _dbContext.SaveChanges();
-            return Created($"api/library/{library.Id}", null);
+            int libraryId = _libraryService.Create(dto);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            return Created($"api/library/{libraryId}", null);
+        }
+        [HttpDelete("{id}")]
+        public ActionResult Delete([FromRoute] int id)
+        {
+            bool isDeleted = _libraryService.Delete(id);
+            if (!isDeleted)
+            {
+                return NotFound();
+            }
+            return NoContent();
         }
     }
 }

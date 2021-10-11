@@ -1,7 +1,10 @@
-﻿namespace LibraryApi.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace LibraryApi.Models
 {
     public class CreateLibraryDto
     {
+        [Required]
         public string Name { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
