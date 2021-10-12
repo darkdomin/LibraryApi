@@ -2,6 +2,7 @@
 using LibraryApi.Entieties;
 using LibraryApi.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace LibraryApi.Services
     {
         private readonly LibraryDbContext _dbContext;
         private readonly IMapper _mapper;
+
         public LibraryService(LibraryDbContext dbContext, IMapper mapper)
         {
             _dbContext = dbContext;

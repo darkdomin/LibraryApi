@@ -1,4 +1,5 @@
 using LibraryApi.Entieties;
+using LibraryApi.Middleware;
 using LibraryApi.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -33,6 +34,7 @@ namespace LibraryApi
             services.AddScoped<LibrarySeeder>();
             services.AddAutoMapper(this.GetType().Assembly);
             services.AddScoped<ILibraryService, LibraryService>();
+            services.AddScoped<ErrorHandlingMiddleware>();
 
         }
 
@@ -44,7 +46,7 @@ namespace LibraryApi
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseMiddleware<ErrorHandlingMiddleware>();
             app.UseHttpsRedirection();
 
             app.UseRouting();
