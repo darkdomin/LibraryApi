@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using LibraryApi.Entieties;
+using LibraryApi.Exceptions;
 using LibraryApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -29,16 +30,15 @@ namespace LibraryApi.Services
             return library.Id;
         }
 
-        public bool Delete(int id)
+        public void Delete(int id)
         {
             var library = _dbContext.Libraries.FirstOrDefault(l => l.Id == id);
             if(library == null)
             {
-                return false;
+                throw new NotFoundException("Library not found");
             }
             _dbContext.Libraries.Remove(library);
             _dbContext.SaveChanges();
-            return true;
         }
 
         public IEnumerable<LibraryDto> Get()
@@ -60,7 +60,7 @@ namespace LibraryApi.Services
                 .FirstOrDefault(l => l.Id == id);
             if (library == null)
             {
-                return null;
+                throw new NotFoundException("Library not found");
             }
             var result = _mapper.Map<LibraryDto>(library);
             return result;

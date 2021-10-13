@@ -11,6 +11,6 @@ namespace LibraryApi.Services
         public IEnumerable<LibraryDto> Get();
         public LibraryDto Get(int id);
         public int Create(CreateLibraryDto dto);
-        public bool Delete(int id);
+        public void Delete(int id);
     }
 }

@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 namespace LibraryApi.Controllers
 {
     [Route("api/library")]
+    [ApiController]
     public class LibraryController : ControllerBase
     {
         private readonly ILibraryService _libraryService;
@@ -32,10 +33,6 @@ namespace LibraryApi.Controllers
         public ActionResult<LibraryDto> Get([FromRoute]int id)
         {
             var library = _libraryService.Get(id);
-            if (library == null)
-            {
-                return NotFound();
-            }
             return Ok(library);
         }
 
@@ -43,20 +40,12 @@ namespace LibraryApi.Controllers
         public ActionResult Create([FromBody] CreateLibraryDto dto)
         {
             int libraryId = _libraryService.Create(dto);
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
             return Created($"api/library/{libraryId}", null);
         }
         [HttpDelete("{id}")]
         public ActionResult Delete([FromRoute] int id)
         {
-            bool isDeleted = _libraryService.Delete(id);
-            if (!isDeleted)
-            {
-                return NotFound();
-            }
+             _libraryService.Delete(id);
             return NoContent();
         }
     }
