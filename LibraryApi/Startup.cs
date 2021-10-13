@@ -35,6 +35,7 @@ namespace LibraryApi
             services.AddAutoMapper(this.GetType().Assembly);
             services.AddScoped<ILibraryService, LibraryService>();
             services.AddScoped<ErrorHandlingMiddleware>();
+            services.AddSwaggerGen();
 
         }
 
@@ -48,7 +49,10 @@ namespace LibraryApi
             }
             app.UseMiddleware<ErrorHandlingMiddleware>();
             app.UseHttpsRedirection();
-
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Library Api")
+            );
             app.UseRouting();
 
             app.UseAuthorization();
