@@ -42,6 +42,7 @@ namespace LibraryApi.Controllers
             int libraryId = _libraryService.Create(dto);
             return Created($"api/library/{libraryId}", null);
         }
+
         [HttpDelete("{id}")]
         public ActionResult Delete([FromRoute] int id)
         {

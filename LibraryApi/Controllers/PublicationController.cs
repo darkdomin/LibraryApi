@@ -19,10 +19,31 @@ namespace LibraryApi.Controllers
             _service = publicationService;
         }
         [HttpPost]
-        public ActionResult Post([FromRoute] int libraryId,[FromBody] CreatePublicationDto dto)
+        public ActionResult Post([FromRoute] int libraryId, [FromBody] CreatePublicationDto dto)
         {
             int id = _service.Create(libraryId, dto);
-            return Created($"api/{libraryId}/publication/{id}", null);
+            return Created($"api/library/{libraryId}/publication/{id}", null);
+        }
+
+        [HttpGet("{publicationId}")]
+        public ActionResult Get([FromRoute] int libraryId, [FromRoute] int publicationId)
+        {
+            PublicationDto publication = _service.Get(libraryId, publicationId);
+            return Ok(publication);
+        }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<PublicationDto>> Get([FromRoute] int libraryId)
+        {
+            var publications = _service.Get(libraryId);
+            return Ok(publications);
+        }
+
+        [HttpDelete("{publicationId}")]
+        public ActionResult Delete([FromRoute] int libraryId, [FromRoute] int publicationId)
+        {
+             _service.Delete(libraryId, publicationId);
+            return NoContent();
         }
     }
 }
