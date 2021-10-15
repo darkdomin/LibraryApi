@@ -33,6 +33,7 @@ namespace LibraryApi
             services.AddDbContext<LibraryDbContext>();
             services.AddScoped<LibrarySeeder>();
             services.AddAutoMapper(this.GetType().Assembly);
+            services.AddScoped<IPublicationService, PublicationService>();
             services.AddScoped<ILibraryService, LibraryService>();
             services.AddScoped<ErrorHandlingMiddleware>();
             services.AddSwaggerGen();
