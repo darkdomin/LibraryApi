@@ -10,9 +10,19 @@ namespace LibraryApi.Entieties
         public DbSet<Address> Addresses { get; set; }
         public DbSet<Publication> Publications { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Role>()
+                        .Property(l => l.Name)
+                        .IsRequired();
+
+            modelBuilder.Entity<User>()
+                        .Property(l => l.Email)
+                        .IsRequired();
+
             modelBuilder.Entity<Library>()
                 .Property(l => l.Name)
                 .IsRequired();

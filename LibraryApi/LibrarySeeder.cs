@@ -1,4 +1,5 @@
 ﻿using LibraryApi.Entieties;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -18,6 +19,13 @@ namespace LibraryApi
             {
                 if (!_dbContext.Libraries.Any())
                 {
+                    IEnumerable<Role> roles = GetRoles();
+                    _dbContext.Roles.AddRange(roles);
+                    _dbContext.SaveChanges();
+                }
+
+                if (!_dbContext.Libraries.Any())
+                {
                     var libraries = GetLibraries();
                     _dbContext.Libraries.AddRange(libraries);
                     _dbContext.SaveChanges();
@@ -25,7 +33,26 @@ namespace LibraryApi
             }
         }
 
-        private IEnumerable<Library> GetLibraries()
+        private static IEnumerable<Role> GetRoles()
+        {
+            return new List<Role>()
+            {
+                new Role
+                {
+                    Name = "Admin"
+                },
+                new Role
+                {
+                    Name = "Manager"
+                },
+                new Role
+                {
+                    Name = "User"
+                }
+            };
+        }
+
+        private static IEnumerable<Library> GetLibraries()
         {
             return new List<Library>()
             {
