@@ -15,6 +15,8 @@ namespace LibraryApi.Entieties
 
         public int RoleId { get; set; }
         public virtual Role Role { get; set; }
+        public int LibraryId { get; set; }
+        public virtual Library Library { get; set; }
 
     }
 }

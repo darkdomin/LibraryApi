@@ -43,10 +43,6 @@ namespace LibraryApi
                 },
                 new Role
                 {
-                    Name = "Manager"
-                },
-                new Role
-                {
                     Name = "User"
                 }
             };
