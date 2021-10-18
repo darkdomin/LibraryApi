@@ -1,5 +1,9 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using LibraryApi.Entieties;
 using LibraryApi.Middleware;
+using LibraryApi.Models;
+using LibraryApi.Models.Validators;
 using LibraryApi.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,7 +34,7 @@ namespace LibraryApi
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers().AddFluentValidation();
             services.AddDbContext<LibraryDbContext>();
             services.AddScoped<LibrarySeeder>();
             services.AddAutoMapper(this.GetType().Assembly);
@@ -38,6 +42,7 @@ namespace LibraryApi
             services.AddScoped<ILibraryService, LibraryService>();
             services.AddScoped<IAccountService, AccountService>();
             services.AddScoped<IPasswordHasher<User>,PasswordHasher<User>>();
+            services.AddScoped<IValidator<RegisterUserDto>, RegisterUserDtoValidator>();
             services.AddScoped<ErrorHandlingMiddleware>();
             services.AddSwaggerGen();
 
