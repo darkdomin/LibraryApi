@@ -38,6 +38,7 @@ namespace LibraryApi
             var jwtSettings = new JwtSettings();
             Configuration.GetSection("Authentication").Bind(jwtSettings);
 
+            services.AddSingleton(jwtSettings);
             services.AddAuthentication(option=>
             {
                 option.DefaultAuthenticateScheme = "Bearer";
