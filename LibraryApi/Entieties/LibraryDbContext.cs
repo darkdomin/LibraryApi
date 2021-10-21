@@ -9,7 +9,6 @@ namespace LibraryApi.Entieties
         public DbSet<Library> Libraries { get; set; }
         public DbSet<Address> Addresses { get; set; }
         public DbSet<Publication> Publications { get; set; }
-        public DbSet<Employee> Employees { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
 

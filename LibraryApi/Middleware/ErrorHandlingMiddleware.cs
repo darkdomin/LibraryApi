@@ -21,6 +21,10 @@ namespace LibraryApi.Middleware
             {
                 await next.Invoke(context);
             }
+            catch (ForbidException forbid)
+            {
+                context.Response.StatusCode = 403;
+            }
             catch(BadRequestException badRequest)
             {
                 context.Response.StatusCode = 400;
