@@ -19,31 +19,35 @@ namespace LibraryApi.Services
         private readonly LibraryDbContext _dbContext;
         private readonly IMapper _mapper;
         private readonly IAuthorizationService _authorizationService;
+        private readonly IUserContextService _userContextService;
 
-        public LibraryService(LibraryDbContext dbContext, IMapper mapper, IAuthorizationService authorizationService)
+        public LibraryService(LibraryDbContext dbContext, IMapper mapper, IAuthorizationService authorizationService, IUserContextService userContextService)
         {
             _dbContext = dbContext;
             _mapper = mapper;
             _authorizationService = authorizationService;
+            _userContextService = userContextService;
         }
 
-        public int Create(CreateLibraryDto dto, int userId)
+        
+
+        public int Create(CreateLibraryDto dto)
         {
             var library = _mapper.Map<Library>(dto);
-            library.CreatedById = userId;
+            library.CreatedById = _userContextService.GetUserId;
             _dbContext.Add(library);
             _dbContext.SaveChanges();
             return library.Id;
         }
 
-        public void Delete(int id, ClaimsPrincipal user)
+        public void Delete(int id)
         {
             var library = _dbContext.Libraries.FirstOrDefault(l => l.Id == id);
             if(library == null)
             {
                 throw new NotFoundException("Library not found");
             }
-            var authorizationResult = _authorizationService.AuthorizeAsync(user, library,
+            var authorizationResult = _authorizationService.AuthorizeAsync(_userContextService.User, library,
                 new ResourceOperationRequirement(ResourceOperation.DELETE)).Result;
             if (!authorizationResult.Succeeded)
             {

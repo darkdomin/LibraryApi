@@ -44,15 +44,14 @@ namespace LibraryApi.Controllers
         [HttpPost]
         public ActionResult Create([FromBody] CreateLibraryDto dto)
         {
-            var userId = int.Parse(User.FindFirst(c => c.Type == ClaimTypes.NameIdentifier).Value);
-            int libraryId = _libraryService.Create(dto, userId);
+            int libraryId = _libraryService.Create(dto);
             return Created($"api/library/{libraryId}", null);
         }
 
         [HttpDelete("{id}")]
         public ActionResult Delete([FromRoute] int id)
         {
-             _libraryService.Delete(id, User);
+             _libraryService.Delete(id);
             return NoContent();
         }
     }
