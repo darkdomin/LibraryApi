@@ -29,8 +29,6 @@ namespace LibraryApi.Services
             _userContextService = userContextService;
         }
 
-        
-
         public int Create(CreateLibraryDto dto)
         {
             var library = _mapper.Map<Library>(dto);

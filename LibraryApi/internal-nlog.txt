@@ -458,3 +458,195 @@
 2021-10-21 16:58:07.9534 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
 2021-10-21 16:58:09.8747 Info AppDomain Shutting down. Logger closing...
 2021-10-21 16:58:09.9006 Info Logger has been shut down.
+2021-10-22 10:52:26.1795 Info Message Template Auto Format enabled
+2021-10-22 10:52:26.2596 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-22 10:52:26.3361 Info Adding target FileTarget(Name=exceptions)
+2021-10-22 10:52:26.3743 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-22 10:52:26.4030 Info Configuration initialized.
+2021-10-22 10:52:26.4030 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-22 10:52:57.6648 Info AppDomain Shutting down. Logger closing...
+2021-10-22 10:52:57.6854 Info Logger has been shut down.
+2021-10-22 10:55:21.8035 Info Message Template Auto Format enabled
+2021-10-22 10:55:21.8527 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-22 10:55:21.9250 Info Adding target FileTarget(Name=exceptions)
+2021-10-22 10:55:21.9583 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-22 10:55:21.9846 Info Configuration initialized.
+2021-10-22 10:55:21.9846 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-22 10:55:25.9829 Info AppDomain Shutting down. Logger closing...
+2021-10-22 10:55:26.0033 Info Logger has been shut down.
+2021-10-23 13:19:54.3240 Info Message Template Auto Format enabled
+2021-10-23 13:19:54.3655 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:19:54.4551 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:19:54.4894 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:19:54.5141 Info Configuration initialized.
+2021-10-23 13:19:54.5141 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:22:36.1531 Info Message Template Auto Format enabled
+2021-10-23 13:22:36.2842 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:22:36.3596 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:22:36.3939 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:22:36.4143 Info Configuration initialized.
+2021-10-23 13:22:36.4143 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:22:47.5188 Info AppDomain Shutting down. Logger closing...
+2021-10-23 13:22:47.5480 Info Logger has been shut down.
+2021-10-23 13:23:12.5246 Info Message Template Auto Format enabled
+2021-10-23 13:23:12.5556 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:23:12.6404 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:23:12.6832 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:23:12.7138 Info Configuration initialized.
+2021-10-23 13:23:12.7138 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:23:49.7179 Info AppDomain Shutting down. Logger closing...
+2021-10-23 13:23:49.7429 Info Logger has been shut down.
+2021-10-23 13:23:54.2175 Info Message Template Auto Format enabled
+2021-10-23 13:23:54.2476 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:23:54.3125 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:23:54.3447 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:23:54.3682 Info Configuration initialized.
+2021-10-23 13:23:54.3682 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:24:11.2029 Info AppDomain Shutting down. Logger closing...
+2021-10-23 13:24:11.2282 Info Logger has been shut down.
+2021-10-23 13:25:17.4214 Info Message Template Auto Format enabled
+2021-10-23 13:25:17.4698 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:25:17.5479 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:25:17.5895 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:25:17.6245 Info Configuration initialized.
+2021-10-23 13:25:17.6245 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:25:57.3671 Info Message Template Auto Format enabled
+2021-10-23 13:25:57.3885 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:25:57.4599 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:25:57.4902 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:25:57.5158 Info Configuration initialized.
+2021-10-23 13:25:57.5158 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:27:42.1492 Info Message Template Auto Format enabled
+2021-10-23 13:27:42.2158 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:27:42.3063 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:27:42.3457 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:27:42.3740 Info Configuration initialized.
+2021-10-23 13:27:42.3740 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:27:54.4899 Info AppDomain Shutting down. Logger closing...
+2021-10-23 13:27:54.5188 Info Logger has been shut down.
+2021-10-23 13:29:39.5523 Info Message Template Auto Format enabled
+2021-10-23 13:29:39.6029 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:29:39.6761 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:29:39.7091 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:29:39.7319 Info Configuration initialized.
+2021-10-23 13:29:39.7319 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:31:01.2335 Info Message Template Auto Format enabled
+2021-10-23 13:31:01.2776 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:31:01.3513 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:31:01.3818 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:31:01.4057 Info Configuration initialized.
+2021-10-23 13:31:01.4057 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:33:18.4805 Info Message Template Auto Format enabled
+2021-10-23 13:33:18.9248 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:33:18.9989 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:33:19.0417 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:33:19.0942 Info Configuration initialized.
+2021-10-23 13:33:19.0942 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:34:13.7172 Info Message Template Auto Format enabled
+2021-10-23 13:34:14.1411 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:34:14.2211 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:34:14.2529 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:34:14.2751 Info Configuration initialized.
+2021-10-23 13:34:14.2751 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:35:30.3816 Info Message Template Auto Format enabled
+2021-10-23 13:35:30.4562 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:35:30.5391 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:35:30.5722 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:35:30.5907 Info Configuration initialized.
+2021-10-23 13:35:30.5907 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:36:09.6259 Info AppDomain Shutting down. Logger closing...
+2021-10-23 13:36:09.6447 Info Logger has been shut down.
+2021-10-23 13:36:53.6525 Info Message Template Auto Format enabled
+2021-10-23 13:36:53.7028 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:36:53.7733 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:36:53.8142 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:36:53.8331 Info Configuration initialized.
+2021-10-23 13:36:53.8331 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:38:02.6578 Info Message Template Auto Format enabled
+2021-10-23 13:38:02.7123 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:38:02.8067 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:38:02.8381 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:38:02.8623 Info Configuration initialized.
+2021-10-23 13:38:02.8623 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:40:06.3105 Info Message Template Auto Format enabled
+2021-10-23 13:40:06.3362 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:40:06.4107 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:40:06.4480 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:40:06.4717 Info Configuration initialized.
+2021-10-23 13:40:06.4717 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:41:22.7788 Info Message Template Auto Format enabled
+2021-10-23 13:41:22.8294 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:41:22.9036 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:41:22.9375 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:41:22.9673 Info Configuration initialized.
+2021-10-23 13:41:22.9673 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:42:05.1505 Info Message Template Auto Format enabled
+2021-10-23 13:42:05.1893 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:42:05.2812 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:42:05.3472 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:42:05.3809 Info Configuration initialized.
+2021-10-23 13:42:05.3809 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:42:38.2558 Info Message Template Auto Format enabled
+2021-10-23 13:42:38.3194 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:42:38.3926 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:42:38.4390 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:42:38.4681 Info Configuration initialized.
+2021-10-23 13:42:38.4681 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 13:46:25.8201 Info Message Template Auto Format enabled
+2021-10-23 13:46:25.8419 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 13:46:25.9260 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 13:46:25.9656 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 13:46:25.9892 Info Configuration initialized.
+2021-10-23 13:46:25.9892 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 15:31:29.9806 Info Message Template Auto Format enabled
+2021-10-23 15:31:30.0290 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 15:31:30.1261 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 15:31:30.1672 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 15:31:30.2027 Info Configuration initialized.
+2021-10-23 15:31:30.2027 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 15:33:43.3833 Info AppDomain Shutting down. Logger closing...
+2021-10-23 15:33:43.4156 Info Logger has been shut down.
+2021-10-23 15:33:49.5241 Info Message Template Auto Format enabled
+2021-10-23 15:33:49.5934 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 15:33:49.6575 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 15:33:49.6945 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 15:33:49.7195 Info Configuration initialized.
+2021-10-23 15:33:49.7195 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 15:35:06.6107 Info Message Template Auto Format enabled
+2021-10-23 15:35:06.6720 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 15:35:06.7923 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 15:35:06.8502 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 15:35:06.8850 Info Configuration initialized.
+2021-10-23 15:35:06.8850 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 15:35:18.2984 Info AppDomain Shutting down. Logger closing...
+2021-10-23 15:35:18.3145 Info Logger has been shut down.
+2021-10-23 17:22:05.1821 Info Message Template Auto Format enabled
+2021-10-23 17:22:05.2453 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 17:22:05.3312 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 17:22:05.3628 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 17:22:05.3852 Info Configuration initialized.
+2021-10-23 17:22:05.3852 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 17:22:22.5938 Info AppDomain Shutting down. Logger closing...
+2021-10-23 17:22:22.6150 Info Logger has been shut down.
+2021-10-23 17:22:43.0802 Info Message Template Auto Format enabled
+2021-10-23 17:22:43.1130 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 17:22:43.1717 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 17:22:43.1986 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 17:22:43.2195 Info Configuration initialized.
+2021-10-23 17:22:43.2195 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 17:22:57.8959 Info AppDomain Shutting down. Logger closing...
+2021-10-23 17:22:57.8959 Info Logger has been shut down.
+2021-10-23 17:23:22.4936 Info Message Template Auto Format enabled
+2021-10-23 17:23:22.5425 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 17:23:22.6241 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 17:23:22.6723 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 17:23:22.7085 Info Configuration initialized.
+2021-10-23 17:23:22.7093 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-10-23 17:24:17.9619 Info AppDomain Shutting down. Logger closing...
+2021-10-23 17:24:17.9840 Info Logger has been shut down.
+2021-10-23 17:24:23.9472 Info Message Template Auto Format enabled
+2021-10-23 17:24:24.0235 Info Loading assembly: NLog.Web.AspNetCore
+2021-10-23 17:24:24.0971 Info Adding target FileTarget(Name=exceptions)
+2021-10-23 17:24:24.1378 Info Validating config: TargetNames=exceptions, ConfigItems=18, FilePath=H:\Library\LibraryApi\LibraryApi\bin\Debug\net5.0\NLog.config
+2021-10-23 17:24:24.1652 Info Configuration initialized.
+2021-10-23 17:24:24.1652 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
