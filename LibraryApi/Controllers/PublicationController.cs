@@ -33,7 +33,7 @@ namespace LibraryApi.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<PublicationDto>> Get([FromRoute] int libraryId,[FromQuery] PublicationQuery publicationQuery )
+        public ActionResult<Pagedresult<PublicationDto>> Get([FromRoute] int libraryId,[FromQuery] PublicationQuery publicationQuery )
         {
             var publications = _service.Get(libraryId, publicationQuery);
             return Ok(publications);

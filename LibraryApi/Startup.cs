@@ -69,6 +69,7 @@ namespace LibraryApi
             services.AddScoped<IAccountService, AccountService>();
             services.AddScoped<IPasswordHasher<User>,PasswordHasher<User>>();
             services.AddScoped<IValidator<RegisterUserDto>, RegisterUserDtoValidator>();
+            services.AddScoped<IValidator<PublicationQuery>, PublicationQueryValidator>();
             services.AddScoped<ErrorHandlingMiddleware>();
             services.AddScoped<IUserContextService, UserContextService>();
             services.AddHttpContextAccessor();

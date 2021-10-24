@@ -7,7 +7,7 @@ namespace LibraryApi.Services
     {
         public int Create(int libraryId, CreatePublicationDto dto);
         PublicationDto Get(int libraryId, int publicationId);
-        IEnumerable<PublicationDto> Get(int libraryId, PublicationQuery publicationQuery);
+        Pagedresult<PublicationDto> Get(int libraryId, PublicationQuery publicationQuery);
         void Delete(int libraryId, int publicationId);
     }
 }

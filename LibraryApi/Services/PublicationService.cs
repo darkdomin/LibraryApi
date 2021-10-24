@@ -58,15 +58,21 @@ namespace LibraryApi.Services
             return _mapper.Map<PublicationDto>(publication);
         }
 
-        public IEnumerable<PublicationDto> Get(int libraryId, PublicationQuery query)
+        public Pagedresult<PublicationDto> Get(int libraryId, PublicationQuery query)
         {
             Library library = GetPublicationById(libraryId);
-            var sortedLibraries = library.Publications
-                                  .Where(p=>query.SearchPhrase == null ||
+            var allSortedPublication = library.Publications
+                                  .Where(p => query.SearchPhrase == null ||
                                   (p.Title.ToLower().Contains(query.SearchPhrase.ToLower()) ||
                                    p.Author.Contains(query.SearchPhrase)));
 
-            return _mapper.Map<IEnumerable<PublicationDto>>(sortedLibraries); 
+            var  sortedPublications = allSortedPublication.Skip((query.PageNumber - 1) * query.PageSize)
+                                  .Take(query.PageSize);
+            var totalCount = allSortedPublication.Count();
+
+            var publicationDtos = _mapper.Map<IEnumerable<PublicationDto>>(sortedPublications).ToList();
+            var resulte = new Pagedresult<PublicationDto>(publicationDtos, totalCount, query.PageSize, query.PageNumber);
+            return resulte;
         }
 
         private Library GetPublicationById(int libraryId)
