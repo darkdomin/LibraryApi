@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace LibraryApi.Services
@@ -61,13 +62,23 @@ namespace LibraryApi.Services
         public Pagedresult<PublicationDto> Get(int libraryId, PublicationQuery query)
         {
             Library library = GetPublicationById(libraryId);
+          
             var allSortedPublication = library.Publications
-                                  .Where(p => query.SearchPhrase == null ||
-                                  (p.Title.ToLower().Contains(query.SearchPhrase.ToLower()) ||
-                                   p.Author.Contains(query.SearchPhrase)));
+                                      .Where(p => query.SearchPhrase == null ||
+                                      (p.Title.ToLower().Contains(query.SearchPhrase.ToLower()) ||
+                                       p.Author.Contains(query.SearchPhrase)));
 
-            var  sortedPublications = allSortedPublication.Skip((query.PageNumber - 1) * query.PageSize)
-                                  .Take(query.PageSize);
+            var pubications = library.Publications.AsQueryable();
+
+            if (!string.IsNullOrEmpty(query.SortBy))
+            {
+                allSortedPublication = OrderBy(pubications, query);
+            }
+          
+            var  sortedPublications = allSortedPublication
+                                     .Skip((query.PageNumber - 1) * query.PageSize)
+                                     .Take(query.PageSize);
+
             var totalCount = allSortedPublication.Count();
 
             var publicationDtos = _mapper.Map<IEnumerable<PublicationDto>>(sortedPublications).ToList();
@@ -87,6 +98,21 @@ namespace LibraryApi.Services
             }
 
             return library;
+        }
+        private static IEnumerable<Publication> OrderBy(IQueryable<Publication> publications, PublicationQuery query) 
+        {
+            var columnSelector = new Dictionary<string, Expression<Func<Publication, object>>>
+                                {
+                                    { nameof(Publication.Title), p=>p.Title},
+                                    { nameof(Publication.Author), p=>p.Author}
+                                };
+
+            var selectedColumn = columnSelector[query.SortBy];
+
+            publications = query.SortDirection == SortDirection.ASC ?
+                           publications.OrderBy(selectedColumn) :
+                           publications.OrderByDescending(selectedColumn);
+            return publications;
         }
     }
 }

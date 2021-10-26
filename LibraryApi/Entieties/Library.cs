@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace LibraryApi.Entieties
 {
@@ -14,5 +15,6 @@ namespace LibraryApi.Entieties
         public int AddressId { get; set; }
         public virtual Address Address { get; set; }
         public virtual List<Publication> Publications { get; set; }
+
     }
 }
